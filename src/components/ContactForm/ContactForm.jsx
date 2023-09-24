@@ -19,9 +19,11 @@ export class ContactForm extends Component {
       name,
       number,
     };
+
     const existsContact = this.props.contacts.find(
       contact => contact.name === this.state.name
     );
+
     if (existsContact) {
       alert(`${this.state.name} is already is contact`);
     } else {
